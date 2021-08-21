@@ -20,10 +20,24 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  let mapaLoco = new Map()
-  for (index in string) {
-    return mapaLoco.set(string[index])
+  obj2 = {}
+  for(index in string) {
+      var letra = string[index]
+      //obj2[letra] = 12
+      //obj2[string[index]] = 1
+      if(Object.keys(obj2).includes(letra)){
+          obj2[letra] ++; //+1
+      }else{
+          obj2[letra] = 1;
+      }
+      //console.log(obj2)
   }
+  
+  //console.log(Object.keys(obj));
+  //console.log(Object.keys(obj).length);
+  //console.log("------------------------------------------------------")
+  //console.log(obj2)
+  return obj2
 }
 
 
