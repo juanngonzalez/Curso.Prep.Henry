@@ -46,6 +46,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  mayuscula = "";
+  minuscula = "";
+
+  for (let index = 0; index < s.length; index++) {
+    if (s[index] === s[index].toUpperCase()) {
+      mayuscula += s[index]
+    } else {
+    minuscula += s[index]
+    }
+  }
+  return mayuscula + minuscula;
 }
 
 
@@ -55,6 +66,7 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  
 } 
 
 
